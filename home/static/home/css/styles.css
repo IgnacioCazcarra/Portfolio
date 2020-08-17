@@ -5,7 +5,7 @@
 }
 html {
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Alata', sans-serif;
 	scroll-behavior: smooth;
 }
 a {
@@ -29,7 +29,6 @@ img {
 	overflow: hidden;
 	background-color: white;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-
   }
   
 #navbar a {
@@ -54,7 +53,7 @@ img {
 }
   
 .content {
-padding: 16px;
+	padding: 16px;
 }
   
 .sticky {
@@ -64,21 +63,52 @@ padding: 16px;
 }
 
 #about{
-	background-color: honeydew;
-	color: #00256B;
-}
-
-#skills{
-	background-color: #375182;
+	background-color: black;
 	color: honeydew;
 }
-
 #projects{
 	background-color: honeydew;
 	color: #00256B;
 }
 
 #contact{
-	background-color: #ddd;
+	background-color: honeydew;
 	color: #00256B;
 }
+
+.info-bar{
+	position: fixed;
+	left: 0;
+	top: 50%;
+}
+
+.icon-link{
+	display: block;
+	width: 40px !important;
+	height: 40px !important;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+#github{
+	background-color: #24292e; 
+	color: white;
+}
+
+#linkedin{
+	background-color: #0073b1;
+	color: white;
+}
+
+#resume{
+	background-color:grey;
+	color: white;
+}
+
+.expand{
+	width: 120px !important;
+	text-align: right;
+	padding-right: 10px;
+}
+
