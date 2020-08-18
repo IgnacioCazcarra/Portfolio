@@ -9,12 +9,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type='text/css' href="{% static 'home/css/styles.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+
     <script src='main.js'></script>
 </head>
 <body>
     <nav id="navbar" class="sticky">
-        <a href="#about">About</a>
+        <a href="#about"><i class="fas fa-home"></i></a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -41,17 +43,20 @@
             <span class="img_bar">Resume</span>
         </a>
     </nav>
-    <section id="about">
+    <section id="about" class="responsive" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('{% static 'home/img/mf.jpg' %}');
+    background-size: cover;">    
         <div class="header container">
-            <div>
-                <h1>About</h1>
+            <div style="pointer-events: none;">
+                <span style="font-size: 80px; font-family: 'Montserrat', sans-serif;color: goldenrod;
+                ">IGNACIO CAZCARRA</span>
+                <h1 style="font-size: 50px; font-family: 'Montserrat', sans-serif; text-align: center;">Software Developer</h1>
             </div>
         </div>
     </section>
     <section id="projects">
         <div class="header container">
             <div>
-                <h1>Projects</h1>
+                <h1>Some of my recent work</h1>
             </div>
         </div>
     </section>
