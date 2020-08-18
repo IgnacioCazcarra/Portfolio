@@ -83,32 +83,24 @@ img {
 }
 
 .icon-link{
-	display: block;
+	font-size: 30px;
+	padding-left: 6px;
+	text-align: left;
+}
+
+.line{
 	width: 40px !important;
 	height: 40px !important;
-	margin: auto;
-	font-size: 30px;
-	text-align: center;
+	position: relative;
+	overflow: hidden;
+	transition: width 0.3s;
 }
 
-#github{
-	background-color: #24292e; 
+.line:hover{
+	width: 110px !important;
+}
+
+.img_bar{
+	font-size: 17px;
 	color: white;
 }
-
-#linkedin{
-	background-color: #0073b1;
-	color: white;
-}
-
-#resume{
-	background-color:grey;
-	color: white;
-}
-
-.expand{
-	width: 120px !important;
-	text-align: right;
-	padding-right: 10px;
-}
-
