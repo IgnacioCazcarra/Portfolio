@@ -41,9 +41,11 @@
     <section id="about" class="responsive" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{% static 'home/img/mf.jpg' %}')">    
         <div class="header container">
             <div>
-                <span style="font-size: 80px; font-family: 'Montserrat', sans-serif;color: goldenrod; pointer-events: none;">
+                <div style="text-align: center;">
+                <span style="font-size: 60px; font-family: 'Montserrat', sans-serif;color: goldenrod; pointer-events: none;text-align: center;">
                     IGNACIO CAZCARRA
                 </span>
+            </div>
                 <h1 style="font-size: 50px; color:white; font-family: 'Unica One', cursive; text-align: center; pointer-events: none;">
                     SOFTWARE DEVELOPER
                 </h1>
@@ -57,15 +59,35 @@
     </section>
     <section id="projects">
         <div class="header container">
-            <div>
+            <div style="text-align: center;">
                 <h1>Some of my recent work</h1>
+                <div class="row">
+                    <div class="d-flex flex-row wrap-box-project">
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptate accusantium molestiae minima dolore, modi dolorem non, nemo consequatur hic neque numquam similique illum, veritatis asperiores blanditiis est perferendis maiores?</p>
+                        <a href="#" class="projectbutton">DEMO</a>
+                        <a href="#" class="projectbutton">SOURCE CODE</a>
+                    </div>
+                    <div class="d-flex flex-row wrap-box-project">
+                        <h3>Project 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptates sequi unde commodi dolores aperiam praesentium expedita sed, ipsam, perferendis nesciunt impedit. Officia exercitationem eos unde suscipit facere, maiores quis!</p>
+                        <a href="#" class="projectbutton">DEMO</a>
+                        <a href="#" class="projectbutton">SOURCE CODE</a>
+                    </div>
+                    <div class="d-flex flex-row wrap-box-project">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi et eveniet impedit exercitationem esse molestias vitae officiis sequi obcaecati est dolore inventore, excepturi reprehenderit tempore porro voluptas id reiciendis quidem.</p>
+                        <a href="#" class="projectbutton">DEMO</a>
+                        <a href="#" class="projectbutton">SOURCE CODE</a>
+                    </div>
+            </div>
             </div>
         </div>
     </section>
     <section id="contact">
         <div class="header container">
         <div class="wrap-box-contact">
-            <span><h1 style="font-family: 'Alata', sans-serif;color: #00256B;text-align: center;">Feel free to reach out to me</h1></span>
+            <span><h1 style="font-family: 'Unica One', cursive; color: #00256B;text-align: center;">FEEL FREE TO REACH OUT TO ME</h1></span>
 
             <form action="https://formspree.io/xdowvgbv" style="padding-top: 50px;" method="POST">
                 <label style="color: #00256B;">
@@ -74,7 +96,7 @@
                 </label>
                 <label style="color: #00256B;">
                     Your message:
-                    <textarea class="input-lab" style="height: 100px; resize: vertical;" name="message"></textarea>
+                    <textarea class="input-lab" style="height: 100px; resize: vertical;max-height: 300px;" name="message"></textarea>
                 </label>
                 <button type="submit" class="btn-submit">Send</button>
             </form>

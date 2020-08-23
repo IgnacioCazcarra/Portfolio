@@ -114,6 +114,9 @@ img {
 	padding: 0px 10px 0 10px;
 }
 
+.projectbutton:hover{
+	border: 2px solid honeydew;
+}
 
 .responsive{
   background-repeat: no-repeat;
@@ -128,16 +131,28 @@ img {
 
 .wrap-box-contact {
 	width: 900px;
-	height: 500px;
+	height: 70%;
     background: #fff;
-    border-radius: 10px;
+	border-radius: 10px;
+	margin: 20px;
     overflow: hidden;
     padding: 72px 55px 90px 55px;
 }
 
+.wrap-box-project {
+	width: 400px;
+	height: 400px;
+    background: #fff;
+    overflow: hidden;
+	box-shadow: 2px 2px 8px #888888;
+	margin-bottom: 30px;
+	padding: 40px;	
+	display: flex;
+}
+
 .input-lab {
 	padding: 5px;
-	margin: 15px 0 15px 0;
+	margin: 10px 0 15px 0;
     display: block;
     width: 100%;
     font-family: Poppins-Regular;
@@ -153,4 +168,19 @@ img {
 	text-align: center;
 	border: 1px solid #252d5f;
 	padding: 5px 20px 5px 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+	margin-left: -15px;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.d-flex {
+    display: flex !important;
 }
