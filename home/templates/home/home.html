@@ -9,8 +9,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type='text/css' href="{% static 'home/css/styles.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@800&family=Unica+One&display=swap" rel="stylesheet">
     <script src='main.js'></script>
 </head>
 <body>
@@ -42,11 +41,11 @@
         <div class="header container">
             <div>
                 <div style="text-align: center;">
-                <span style="font-size: 60px; font-family: 'Montserrat', sans-serif;color: goldenrod; pointer-events: none;text-align: center;">
-                    IGNACIO CAZCARRA
-                </span>
-            </div>
-                <h1 style="font-size: 50px; color:white; font-family: 'Unica One', cursive; text-align: center; pointer-events: none;">
+                    <span style="font-size: 60px; font-family: 'Montserrat', sans-serif;color: goldenrod; pointer-events: none;text-align: center;">
+                        IGNACIO CAZCARRA
+                    </span>
+                </div>
+                <h1 style="font-size: 50px; color:white; font-family: 'Unica One', cursive; text-align: center;">
                     SOFTWARE DEVELOPER
                 </h1>
                 <div style="text-align: center;">
@@ -60,25 +59,39 @@
     <section id="projects">
         <div class="header container">
             <div style="text-align: center;">
-                <h1>Some of my recent work</h1>
+                <h1 class="wrk-header">SOME OF MY RECENT WORK</h1>
                 <div class="row">
                     <div class="d-flex flex-row wrap-box-project">
-                        <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptate accusantium molestiae minima dolore, modi dolorem non, nemo consequatur hic neque numquam similique illum, veritatis asperiores blanditiis est perferendis maiores?</p>
-                        <a href="#" class="projectbutton">DEMO</a>
-                        <a href="#" class="projectbutton">SOURCE CODE</a>
+                        <div>
+                            <h3>NxN-Magic-Square-solver</h3>
+                            <span style="color: grey;">Example of 3x3 matrix</span>
+                            <img src="../../static/home/img/nxn.gif" alt="P2gif" style="width: 250px; height: 250px;">
+                            <p style="font-size: 18px; padding-bottom: 8px;">This project solves NxN magic squares using backtracking algorithm. All you have to do is enter a NxN matrix and (if it's solvable) the computer will solve it.</p>
+                            <a href="https://github.com/IgnacioCazcarra/NxN-Magic-Square-solver-SwingGUI" class="projectbutton project-btn-bc">SOURCE CODE</a>
+                        </div>
                     </div>
                     <div class="d-flex flex-row wrap-box-project">
-                        <h3>Project 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptates sequi unde commodi dolores aperiam praesentium expedita sed, ipsam, perferendis nesciunt impedit. Officia exercitationem eos unde suscipit facere, maiores quis!</p>
-                        <a href="#" class="projectbutton">DEMO</a>
-                        <a href="#" class="projectbutton">SOURCE CODE</a>
+                        <div>
+                            <h3>Path-Finder</h3>
+                            <span style="color: grey;">Example with A* algorithm</span>
+                            <img src="../../static/home/img/pathfinding.gif" alt="P2gif" style="width: 320px; height: 250px;">
+                            <p style="font-size: 18px; padding-bottom: 8px;">Visualization of pathfinding algorithms. Availables algorithms are: DFS, BFS, Dijkstra and A*.</p>
+                            <a href="https://github.com/IgnacioCazcarra/Path-Finder" class="projectbutton project-btn-bc">SOURCE CODE</a>
+                        </div>
                     </div>
                     <div class="d-flex flex-row wrap-box-project">
-                        <h3>Project 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi et eveniet impedit exercitationem esse molestias vitae officiis sequi obcaecati est dolore inventore, excepturi reprehenderit tempore porro voluptas id reiciendis quidem.</p>
-                        <a href="#" class="projectbutton">DEMO</a>
-                        <a href="#" class="projectbutton">SOURCE CODE</a>
+                        <div>
+                            <h3>Stable-Matching</h3>
+                            <p style="font-size: 18px; padding-bottom: 8px;">Implementation of the Gale-Shapley Stable Matching algorithm. Given n men and n women, where each person has ranked all members of the opposite sex in order of preference, marry the men and women together such that there are no two people of opposite sex who would both rather have each other than their current partners.</p>
+                            <a href="https://github.com/IgnacioCazcarra/Stable-Matching-SwingGUI" class="projectbutton project-btn-bc">SOURCE CODE</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row wrap-box-project">
+                        <div>
+                            <h3>Portfolio</h3>
+                            <p style="font-size: 18px; padding-bottom: 8px;">Portfolio website made with HTML&CSS. Backend was meant to be Django but since this is hosted on Github pages, it doesn't really matter.</p>
+                            <a href="https://github.com/IgnacioCazcarra/Portfolio" class="projectbutton project-btn-bc">SOURCE CODE</a>
+                        </div>
                     </div>
             </div>
             </div>
@@ -87,8 +100,8 @@
     <section id="contact">
         <div class="header container">
         <div class="wrap-box-contact">
-            <span><h1 style="font-family: 'Unica One', cursive; color: #00256B;text-align: center;">FEEL FREE TO REACH OUT TO ME</h1></span>
-
+            <span><h1 style="font-family: 'Unica One', cursive; color: #00256B;text-align: center;">FEEL FREE TO REACH OUT</h1></span>
+            <span style="font-size: 10px; color: grey; text-align: center;"><h1>Email: nacho.eze.cazcarra@gmail.com</h1></span>
             <form action="https://formspree.io/xdowvgbv" style="padding-top: 50px;" method="POST">
                 <label style="color: #00256B;">
                     Your email:
