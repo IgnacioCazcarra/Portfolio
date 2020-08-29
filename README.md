@@ -1,2 +1,0 @@
-# Portfolio
-Django resume website
