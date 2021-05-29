@@ -45,7 +45,6 @@ img {
 	text-align: right;
 	display: block;
 	color: #00256B;
-	font-size: 20px;
 	padding: 14px 30px;
 	text-decoration: none;
 	font-size: 17px;
@@ -117,18 +116,17 @@ img {
 
 .projectbutton{
 	font-family: 'Unica One', cursive;
-	font-size: 25px;
+	font-size: 4vmin;
 	color: #252d5f;
 	background-color: transparent;
-	text-align: center;
 	font-weight: bold;
-	border: 1px solid honeydew;
+	border: 0.1vmin solid honeydew;
 	margin: auto;
-	padding: 0px 10px 0 10px;
+	text-align: center;
 }
 
 .projectbutton:hover{
-	border: 2px solid honeydew;
+	border: 0.3vmin solid honeydew;
 }
 
 .responsive{
@@ -206,4 +204,66 @@ img {
 	color: #00256B; 
 	font-family: 'Unica One', cursive; 
 	font-size: 40px;
+}
+
+@keyframes showTopText {
+  0% { transform: translate3d(-100%, 0, 0); }
+  100% { transform: translate3d(1%, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(4%, 0, 0); }
+}
+.animated-title {
+  color: rgb(104, 101, 101);
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 10vmin;
+  padding: 1vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 0.1vmin solid #ffffff;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1.4s;
+  animation-delay: 0.7ms;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top {
+  color: goldenrod;
+  font-family: 'Montserrat';
+  pointer-events: none;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  font-family: 'Unica one', cursive;
+  font-weight: bold; 
+  color: white;
+  pointer-events: none;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 1.4s;
+  animation-delay: 1.1ms;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
 }
