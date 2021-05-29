@@ -71,17 +71,11 @@ img {
 }
 
 #projects{
-	background: #C9D6FF;  
-	background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
-	background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
-	color: black;
+	background: #1b2426!important;
 }
 
 #contact{
-	background: #3f2b96;
-	background: -webkit-linear-gradient(to right, #a8c0ff, #3f2b96);  
-	background: linear-gradient(to right, #a8c0ff, #3f2b96); 
-	color: white;
+	background: #1b2426!important;
 }
 
 .info-bar{
@@ -91,14 +85,15 @@ img {
 }
 
 .icon-link{
-	font-size: 30px;
-	padding-left: 6px;
+	font-size: 3.5vmin;
+	padding-left: 0.6vmin;
 	text-align: left;
+	position: absolute;
 }
 
 .line{
-	width: 40px !important;
-	height: 40px !important;
+	width: 4.7vmin;
+	height: 4.7vmin;
 	position: relative;
 	overflow: hidden;
 	display: block;
@@ -106,12 +101,15 @@ img {
 }
 
 .line:hover{
-	width: 110px !important;
+	width: 13vmin !important;
 }
 
 .img_bar{
-	font-size: 17px;
+	font-size: 1.9vmin;
 	color: white;
+	position: absolute;
+    padding-top: 2vmin;
+    padding-left: 5.4vmin;
 }
 
 .projectbutton{
@@ -154,14 +152,13 @@ img {
 	width: 500px;
 	height: 500px;
 	max-width: 70%;
-    background: #fff;
+    background: rgb(217, 220, 238);
 	overflow: auto; 
-	box-shadow: 2px 2px 8px #888888;
+	box-shadow: rgba(143, 157, 235, 0.65) 6px 6px, rgba(143, 157, 235, 0.212) 12px 12px;
 	margin: 10px 20px 20px 30px;
 	padding: 40px;	
 	display: flex;
 }
-
 .input-lab {
 	padding: 5px;
 	margin: 10px 0 15px 0;
@@ -201,9 +198,10 @@ img {
 
 .wrk-header{
 	padding: 50px 0px 50px 0px; 
-	color: #00256B; 
+	color: #252d5f; 
+	text-shadow: blanchedalmond  1px 1px 1px;
 	font-family: 'Unica One', cursive; 
-	font-size: 40px;
+	font-size: 5em;
 }
 
 @keyframes showTopText {
