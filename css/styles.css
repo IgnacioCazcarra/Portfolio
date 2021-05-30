@@ -179,6 +179,11 @@ img {
 	padding: 5px 20px 5px 20px;
 }
 
+.btn-submit:hover{
+	color: #1d2349;
+	background-color: rgb(211, 211, 211);
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -264,4 +269,86 @@ img {
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+}
+
+.single-service {
+	border: 1px solid #ddd;
+	padding: 25px 40px;
+	margin-bottom: 70px;
+	position:relative;
+	-webkit-transition:.3s;
+	transition:.3s;
+	text-align: center;
+	border-radius: 40px 10px;
+	padding-bottom:30px;
+	background-color: white;
+	max-width: 90%;
+	width: 600px;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+.single-service:before{
+	position: absolute;
+	content: "";
+	width: 0%;
+	right: 0;
+	bottom: 0;
+	border-right: 3px solid #252d5f;
+	height: 0%;
+	z-index: 2;
+	-webkit-transition:.5s;
+	transition:.5s
+}
+
+.single-service h3 {
+	position: relative;
+	font-weight: 400;
+	margin-top: 0px;
+	padding-top: 35px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.single-service p {
+	font-weight: 300;
+	
+}
+.single-service h3:before {
+	position: absolute;
+	content: "";
+	width: 3px;
+	height: 12px;
+	background-color: #252d5f;
+	top: 0px;
+	left: 50%;
+	margin-left: -1.5px;
+}
+.single-service h3:after {
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color: #252d5f;
+	left: 50%;
+	margin-left: -15px;
+	top: 12px;
+}
+
+.single-service a.border-btn {
+	background-color: white;
+	position: absolute;
+	left: 33%;
+	right: 33%;
+	margin-top: 15px;
+	z-index: 99;
+	border: 1px solid #252d5f;
+	color: #252d5f;
+	font-family: 'Unica One', cursive;
+	font-weight: bold;
+	border-radius: 40px 10px;
+}
+
+.single-service a.border-btn:hover {
+	background-color: rgb(233, 233, 233);
+	color: #1c2146;
 }
